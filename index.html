@@ -1,65 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-UA">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="Описание сайта">
-      <meta name="keywords" content="Ключивие слова">
-      <link rel="stylesheet" href="css/style.css" />
-      <link rel="shortcut icon" href="" type="image/x-icon">
-
-       <title></title>
-         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+	<meta charset="UTF-8">
+	<title>Домашняя работа №5</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="one">
-  <ul class="topmenu">
-    <li><a href="#">Meu YouBike</a></li>
-    <li><a href="#">Vender</a></li>
-    <li><a href="#"> Forum </a></li>
-    <li><a href="#">Contato</a></li>
-    <li><a href="#"> Ajuda</a></li>
-    <img src="img/line.png" alt="">
-    <img src="img/flag.png" alt="" class="flag">
-    <!-- <li><a href="#">Minhas Ofertas</a></li> -->
-     <p>Minhas Ofertas</p>
-    <img src="img/but.png" alt="" class="menu">
-  </ul>
-</nav>
-
- <div class="head">
-   <h1>Cadastre-se</h1>
-  </div>
-
- 
-<div id="form-wrapper">
-    <form>
-        <div id="form-inner"> 
-            <img src="img/button.png" alt="">
-            <img src="img/OU.png" alt="">        
-            <input type="text" class="input" id="name" placeholder="First Name">
-            <input type="email" class="input"  placeholder="Last Name">
-             <input type="text" class="input"  placeholder="Email Address">
-            <input type="email" class="input"  placeholder="Choose Password">
-            <input type="email" class="input"  placeholder="Password Confirm">
-            <input  type="checkbox" class="check" value="Send"><p>Send me Youbike updates and tips</p>
-             <input type="submit" class="button" value="Creat my Account">
-            <p class="Polic">By clicking the button above, you agree to the Terms of Service</p>
-            <p class="Priv">Xiew our Privacy Policy.</p>
-        </div>
-        
-    </form>
-</div>
-
-
-
-
+	<header>
+		<div class="upper_line clearfix">
+			<p class="signup">Ola! <a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></p>
+			<p class="offer"><a href="#">Minhas Ofertas</a></p>
+			<nav>
+				<ul class="menu clearfix">
+					<li><a href="#">Meu YouBike</a></li>
+					<li><a href="#">Vender</a></li>
+					<li><a href="#">Forum</a></li>
+					<li><a href="#">Contato</a></li>
+					<li><a href="#">Ajuda</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="content">
+		<div class="form">
+			<h2>Cadastre-se</h2>
+			<div class="fb_login">
+				<a href="#"><span>Log In</span> with <span>Facebook</span></a>
+			</div>
+			<p class="or_sep">OU</p>
+			<form action="#" name="signup" id="signup">
+				<input type="text" name="f_name" placeholder="First Name" form="signup" required>
+				<input type="text" name="l_name" placeholder="Last Name" form="signup" required>
+				<input type="email" name="email" placeholder="Email Address" form="signup" required>
+				<input type="password" name="password" placeholder="Choose Password" form="signup" required>
+				<input type="password" name="password_r" placeholder="Password Confirm" form="signup" required>
+				<p class="subscribe clearfix"><input type="checkbox" name="subscribe" value="true" form="signup">Send me Youbike updates and tips</p>
+				<input type="submit" value="Create my Account" form="signup">
+				<p class="policy"><span>By clicking the button above, you agree to the Terms of Service</span><span>Xiew our Privacy Policy.</span></p>
+			</form>
+		</div>
+	</section>
 </body>
 </html>
